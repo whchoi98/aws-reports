@@ -1,0 +1,9 @@
+{
+  "name": "aws-reports",
+  "version": "1.0.0",
+  "description": "고객 공유용 기술 보고서를 Markdown 원고 하나에서 MS Word(.docx)와 단일 HTML로 함께 만드는 도구. benchmark-report: 벤치마크·성능 비교 보고서. poc-report: 성공 기준별 판정과 다음 단계를 담은 PoC 결과 보고서",
+  "author": {
+    "name": "WooHyung Choi"
+  },
+  "keywords": ["aws", "report", "benchmark", "poc", "docx", "word", "html", "korean"]
+}

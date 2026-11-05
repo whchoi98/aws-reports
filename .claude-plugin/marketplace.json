@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "aws-reports",
+  "owner": {
+    "name": "WooHyung Choi"
+  },
+  "description": "고객 공유용 기술 보고서(Word + HTML) 플러그인",
+  "plugins": [
+    {
+      "name": "aws-reports",
+      "source": "./",
+      "description": "Markdown 원고 하나에서 Word(.docx)와 단일 HTML 보고서를 같은 스타일로 생성. benchmark-report, poc-report"
+    }
+  ]
+}

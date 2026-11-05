@@ -1,0 +1,12 @@
+{
+  "name": "aws-reports-scripts",
+  "private": true,
+  "description": "Markdown -> Word (.docx) + HTML in the aws-reports house style",
+  "type": "module",
+  "dependencies": {
+    "docx": "9.15.1",
+    "docx-preview": "0.4.1",
+    "jszip": "3.10.1",
+    "marked": "18.1.1"
+  }
+}

@@ -1,0 +1,23 @@
+# npm packages installed by shared/scripts/setup.sh (never ship them; setup.sh installs per machine)
+node_modules/
+
+# Build outputs and previews from local runs
+out/
+preview/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Secrets and local overrides
+.env
+.env.*
+.claude/settings.local.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
