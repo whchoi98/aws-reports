@@ -38,18 +38,20 @@ tests/run-all.sh         builds both examples and runs positive and negative che
 
 Skills reach the shared folder through `${CLAUDE_SKILL_DIR}/../../shared`, so keep the two skills inside this plugin.
 
-## Install (local marketplace)
+## Install
 
 ```bash
-claude plugin marketplace add /home/ec2-user/my-project/my-plugins/aws-reports
+claude plugin marketplace add whchoi98/aws-reports
 claude plugin install aws-reports@aws-reports
 ```
+
+To work on a local clone instead, add the clone folder as the marketplace (`claude plugin marketplace add /path/to/aws-reports`); Claude Code then reads that folder directly.
 
 Then restart Claude Code or run `/reload-plugins`. The first build runs `shared/scripts/setup.sh`, which installs npm packages (docx, marked, docx-preview) into the plugin cache and fonts from npm `@kfonts/*` (OFL-1.1) into `~/.local/share/fonts`. Requirements: Node.js 18+, Python 3, uv.
 
 ## Update
 
-Any change under `skills/` or `shared/` needs a version bump in `.claude-plugin/plugin.json`, a CHANGELOG entry, then `claude plugin marketplace update aws-reports` and `claude plugin update aws-reports@aws-reports`.
+Any change under `skills/` or `shared/` needs a version bump in `.claude-plugin/plugin.json` and a CHANGELOG entry. After a push, installers run `claude plugin marketplace update aws-reports` and `claude plugin update aws-reports@aws-reports`.
 
 ## Test
 
@@ -74,18 +76,20 @@ bash tests/run-all.sh
 
 두 스킬 모두 Markdown 원고 하나를 쓰고, `shared/scripts/report.mjs`로 `<name>.docx`와 `<name>.html`을 함께 만든 뒤 `shared/scripts/check_report.py`(`--profile benchmark` 또는 `--profile poc`)로 두 파일을 검사합니다.
 
-## 설치 (로컬 마켓플레이스)
+## 설치
 
 ```bash
-claude plugin marketplace add /home/ec2-user/my-project/my-plugins/aws-reports
+claude plugin marketplace add whchoi98/aws-reports
 claude plugin install aws-reports@aws-reports
 ```
+
+로컬 클론에서 고치며 쓰려면 클론 폴더를 마켓플레이스로 추가합니다(`claude plugin marketplace add /path/to/aws-reports`). 그러면 Claude Code가 그 폴더를 바로 읽습니다.
 
 설치한 뒤 Claude Code를 다시 시작하거나 `/reload-plugins`를 실행합니다. 처음 빌드할 때 `shared/scripts/setup.sh`가 npm 패키지(docx, marked, docx-preview)를 플러그인 캐시에, 글꼴(npm `@kfonts/*`, OFL-1.1)을 `~/.local/share/fonts`에 설치합니다. 필요한 도구는 Node.js 18 이상, Python 3, uv입니다.
 
 ## 업데이트
 
-`skills/`나 `shared/` 아래를 고치면 `.claude-plugin/plugin.json`의 버전을 올리고 CHANGELOG에 기록한 뒤 `claude plugin marketplace update aws-reports`, `claude plugin update aws-reports@aws-reports`를 실행합니다.
+`skills/`나 `shared/` 아래를 고치면 `.claude-plugin/plugin.json`의 버전을 올리고 CHANGELOG에 기록합니다. push한 뒤 설치한 쪽에서 `claude plugin marketplace update aws-reports`, `claude plugin update aws-reports@aws-reports`를 실행합니다.
 
 ## 테스트
 

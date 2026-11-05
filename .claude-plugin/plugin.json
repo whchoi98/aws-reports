@@ -5,5 +5,15 @@
   "author": {
     "name": "WooHyung Choi"
   },
-  "keywords": ["aws", "report", "benchmark", "poc", "docx", "word", "html", "korean"]
+  "repository": "https://github.com/whchoi98/aws-reports",
+  "keywords": [
+    "aws",
+    "report",
+    "benchmark",
+    "poc",
+    "docx",
+    "word",
+    "html",
+    "korean"
+  ]
 }
