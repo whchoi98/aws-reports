@@ -1,5 +1,14 @@
 # aws-reports
 
+> **Moved to [whchoi98/my-plugins](https://github.com/whchoi98/my-plugins) (1.2.0+)** as the `aws-reports` skill
+> (`/my-plugins:aws-reports`), one skill for both benchmark and PoC reports. This repository is archived and
+> gets no updates. Install: `claude plugin marketplace add whchoi98/my-plugins` and
+> `claude plugin install my-plugins@my-plugins`.
+>
+> **[whchoi98/my-plugins](https://github.com/whchoi98/my-plugins)(1.2.0 이상)의 `aws-reports` skill로 옮겼습니다**
+> (`/my-plugins:aws-reports`). 벤치마크와 PoC 보고서를 skill 하나로 합쳤습니다. 이 저장소는 아카이브되어 더 이상
+> 갱신하지 않습니다.
+
 [![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)](CHANGELOG.md)
 <a href="#english"><img src="https://img.shields.io/badge/lang-English-blue.svg" alt="English"></a>
 <a href="#korean"><img src="https://img.shields.io/badge/lang-한국어-red.svg" alt="Korean"></a>
